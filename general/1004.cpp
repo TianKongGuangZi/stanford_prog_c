@@ -1,31 +1,22 @@
+//Financial Management
 #include <iostream>
 #include <stdio.h>
+
 using namespace std;
 
-
-int run()
+int		main(void)
 {
-	cout << "running";
-	double a;
-	double b;
-	cin >> a >> b;
-	cout << a << b << endl;
-}
+	double	next;
+	double	sum;
+	int		i;
 
-int main()
-{
-	int count;
-	int i;
-	
-	i = 1;
-	cin >> count;
-	while (i <= count)
+	i = 0;
+	while(i < 12)
 	{
-		cout << "Scenario #" << i << ":" << endl;
-		run();
+		cin >> next;
+		sum+=next;
 		i++;
 	}
-
+	printf("$%.2f\n",(sum / 12));
 	return (0);
 }
-
